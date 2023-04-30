@@ -1,5 +1,5 @@
 export default function Content({ content }) {
-  const paragraphs = content.split("\n")
+  const paragraphs = content?.split("\n") || []
 
   return <section>
 
