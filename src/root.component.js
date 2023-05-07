@@ -2,7 +2,7 @@ import { Stack } from "@mui/material"
 import { useEffect, useState } from "react"
 
 import Content from "./components/Content"
-import Title from "./components/Title"
+import { Title } from "@digidojo-blog/design-system"
 import usePost from "./hooks/usePost"
 import useRouteUUID from "./hooks/useRouteUUID"
 
@@ -23,7 +23,7 @@ export default function Root(props) {
   }, [title, content])
 
   return <Stack>
-    <Title title={title} />
+    <Title>{ title }</Title>
     <Content content={content} />
   </Stack>
 }
